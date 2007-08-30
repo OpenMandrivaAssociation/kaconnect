@@ -50,7 +50,7 @@ Exec=%{_bindir}/%{name}
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=Sequencer;X-MandrivaLinux-Multimedia-Sound
+Categories=Sequencer;X-MandrivaLinux-Multimedia-Sound;
 EOF
 
 %clean
