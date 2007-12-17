@@ -11,7 +11,6 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://www.suse.de/~mana/kalsatools.html
 License:	GPL
 Group:		Sound
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	qt3-devel libalsa-devel
 Patch1:		kaconnect-build-x86-64.patch
 Patch2:		kaconnect-1.1.1-fix-build.patch
