@@ -1,6 +1,6 @@
 %define name	kaconnect
 %define version	1.1.1
-%define release %mkrel 5
+%define release %mkrel 7
 
 Name: 	 	%{name}
 Summary: 	QT frontend for ALSA sequencer
