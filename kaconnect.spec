@@ -23,9 +23,9 @@ system.
 
 %prep
 %setup -q
-perl -p -i -e "s/gcc/gcc\ $RPM_OPT_FLAGS/g" make_kaconnect
+perl -p -i -e "s/gcc/gcc\ %{optflags}/g" make_kaconnect
 %ifarch x86_64
-%patch1 -p1 -b build64
+%patch1 -p1 -b .build64
 %endif
 %patch2 -p1
 
