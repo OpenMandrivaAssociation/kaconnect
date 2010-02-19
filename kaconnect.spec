@@ -12,7 +12,8 @@ URL:		http://www.suse.de/~mana/kalsatools.html
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	qt3-devel libalsa-devel
+BuildRequires:	qt3-devel
+BuildRequires:	libalsa-devel
 Patch1:		kaconnect-build-x86-64.patch
 Patch2:		kaconnect-1.1.1-fix-build.patch
 
@@ -27,6 +28,7 @@ perl -p -i -e "s/gcc/gcc\ $RPM_OPT_FLAGS/g" make_kaconnect
 %patch1 -p1 -b build64
 %endif
 %patch2 -p1
+
 %build
 %make -f make_kaconnect
 										
