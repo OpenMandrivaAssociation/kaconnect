@@ -1,0 +1,8 @@
+--- kaconnect-1.1.1/make_kaconnect.build64	2010-02-19 19:43:27.000000000 +0100
++++ kaconnect-1.1.1/make_kaconnect	2010-02-19 19:44:32.000000000 +0100
+@@ -1,4 +1,4 @@
+-QT_LIB_DIR=-L/usr/lib/qt3/lib
++QT_LIB_DIR=-L/usr/lib64
+ 
+ kaconnect: kaconnect.o alsa_access.o alsa_access.moc.o connector.o connector.moc.o portlistbox.o portlistbox.moc.o 
+ 	gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 kaconnect.o alsa_access.o alsa_access.moc.o \

@@ -1,0 +1,11 @@
+--- kaconnect-1.1.1/connector.h~	2002-02-25 17:53:07.000000000 +0100
++++ kaconnect-1.1.1/connector.h	2006-07-10 13:41:58.000000000 +0200
+@@ -24,7 +24,7 @@
+         void arrow(int x1, int y1, int x2, int y2); 
+    
+     public:
+-        ConnectorWidget::ConnectorWidget(QWidget *parent, snd_seq_t *pseq); 
++        ConnectorWidget(QWidget *parent, snd_seq_t *pseq); 
+         void set_r_listBox(PortListBox *p_r_portlist);
+         void set_w_listBox(PortListBox *p_w_portlist);
+                    
